@@ -20,7 +20,7 @@ func main() {
 	config.ConnectDB()
 
 	app := fiber.New()
-	routes.SetupRoutes(app)
+	routes.MainRoutes(app)
 
 	log.Fatal(app.Listen(":" + os.Getenv("APP_PORT")))
 }

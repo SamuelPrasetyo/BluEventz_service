@@ -4,11 +4,9 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
-func SetupRoutes(app *fiber.App) {
+func MainRoutes(app *fiber.App) {
 	api := app.Group("/api/v1")
 
+	// Call events route
 	eventsRoutes(api)
-
-	// api.Get("/users", controllers.GetUsers)
-	// api.Post("/users", controllers.CreateUser)
 }
