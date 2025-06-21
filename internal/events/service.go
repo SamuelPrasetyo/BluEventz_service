@@ -1,9 +1,11 @@
+/* Berisi logika bisnis */
+
 package events
 
 import (
 	"github.com/SamuelPrasetyo/BluEventz_service/internal/events"
 )
 
-func GetEvent() ([]events.Event, error) {
-	return events.FetchEvents()
+func GetEventsService() ([]events.MEvent, error) {
+	return events.GetAllEventsRaw()
 }

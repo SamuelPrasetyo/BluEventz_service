@@ -1,8 +1,10 @@
+/* Menyimpan definisi struct untuk data utama */
+
 package events
 
 import "time"
 
-type Event struct {
+type MEvent struct {
 	IDEvent          string    `json:"id_event" gorm:"column:idevent"`
 	NamaEvent        string    `json:"nama_event" gorm:"column:cnmevent"`
 	Tanggal          time.Time `json:"tanggal" gorm:"column:dtgl"`

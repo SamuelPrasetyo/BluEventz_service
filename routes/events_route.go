@@ -10,5 +10,5 @@ func eventsRoutes(group fiber.Router) {
 	event := group.Group("/events")
 
 	// Endpoint
-	event.Get("/get-events", events.GetEvents)
+	event.Get("/get-events", events.GetEventsHandler)
 }

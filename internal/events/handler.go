@@ -1,3 +1,5 @@
+/* Tempat semua endpoint HTTP/REST berada */
+
 package events
 
 import (
@@ -6,7 +8,7 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
-func GetEvents(c *fiber.Ctx) error {
+func GetEventsHandler(c *fiber.Ctx) error {
 	data, err := events.GetEventsService()
 
 	// Handle null atau zero value
