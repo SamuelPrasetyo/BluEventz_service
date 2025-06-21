@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"github.com/SamuelPrasetyo/BluEventz_service/app/modules/events/controller"
+	"github.com/SamuelPrasetyo/BluEventz_service/internal/events"
 	"github.com/gofiber/fiber/v2"
 )
 
@@ -10,5 +10,5 @@ func eventsRoutes(group fiber.Router) {
 	event := group.Group("/events")
 
 	// Endpoint
-	event.Get("/get-events", controller.GetEvents)
+	event.Get("/get-events", events.GetEvents)
 }
