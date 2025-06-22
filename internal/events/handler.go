@@ -3,13 +3,12 @@
 package events
 
 import (
-	"github.com/SamuelPrasetyo/BluEventz_service/internal/events"
 	"github.com/SamuelPrasetyo/BluEventz_service/utils"
 	"github.com/gofiber/fiber/v2"
 )
 
 func GetEventsHandler(c *fiber.Ctx) error {
-	data, err := events.GetEventsService()
+	data, err := GetEventsService()
 
 	// Handle null atau zero value
 	if err != nil {

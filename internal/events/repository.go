@@ -4,11 +4,10 @@ package events
 
 import (
 	"github.com/SamuelPrasetyo/BluEventz_service/config"
-	"github.com/SamuelPrasetyo/BluEventz_service/internal/events"
 )
 
-func GetAllEventsRaw() ([]events.MEvent, error) {
-	var results []events.MEvent
+func GetAllEventsRaw() ([]MEvent, error) {
+	var results []MEvent
 
 	query := `
 		SELECT 
